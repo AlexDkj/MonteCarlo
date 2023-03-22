@@ -1,6 +1,10 @@
 # MonteCarlo
 Monte-Carlo parallel algorithm in pthread, openmp and mpi
 
-Compile command: make or make monte_carlo
+<b>Compile command:</b> 
 
-Run: ./monte_carlo numer_of_throws number_of_threads
+make or make monte_carlo
+
+<b>Run: </b> 
+
+./monte_carlo numer_of_throws number_of_threads
