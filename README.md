@@ -17,6 +17,10 @@ openmp       ./omp_monte_carlo numer_of_throws number_of_threads
 
 mpi          mpiexec -np number_of_processes ./mpi_monte_carlo
 
+or
+
+mpi          mpiexec -f machines -np number_of_processes ./mpi_monte_carlo with
+
 <b> Test </b>
 
 pthread     script_erg1_monte.sh number_of_throws
