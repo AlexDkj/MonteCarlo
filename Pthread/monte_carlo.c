@@ -28,8 +28,8 @@ void* thr_func_p(void* arg){
    int f = *(int*)arg;
 
    for(int i = iter_start; i < f; i++){
-      x = rand() % 2;
-      y = rand() % 2;
+      x = (double)rand() * ( 1 - (-1) ) / (double)RAND_MAX + (-1);
+      y = (double)rand() * ( 1 - (-1) ) / (double)RAND_MAX + (-1);
 
       quad_distance = x*x + y*y;
 
@@ -74,8 +74,8 @@ void* thr_func(void* arg){
    /* serial version */
 
    for(int i=0; i < f; i++){
-      x = rand() % 2;
-      y = rand() % 2;
+      x = (double)rand() * ( 1 - (-1) ) / (double)RAND_MAX + (-1);
+      y = (double)rand() * ( 1 - (-1) ) / (double)RAND_MAX + (-1);
 
       quad_distance = x*x + y*y;
 
